@@ -1,5 +1,50 @@
 @startuml
 
-class Mascota 
+class Dk
+class Peach
+class Mario {
+    + Saltar()
+}
+class Barril 
+class Arma {
+    + Golpear()
+}
+class Escalera
+class Martillo
+class Vida
+class Personaje{
+    + Mover()
+} 
+class Plataforma
+class Puntaje{
+    + Aumentar()
+}
+class Enemigo{
+    + Atacar()
+    + Lanzar()
+}
+class Objetivo
+class Sonido {
+    + Hablar()
+}
+
+Dk --|> Personaje
+Peach --|> Personaje
+Peach --|> Objetivo
+Mario --|> Personaje
+Dk --|> Enemigo
+Barril --|> Arma
+Martillo --|> Arma
+
+Mario *-- Vida
+Mario *-- Puntaje
+Personaje *-- Sonido
+
+Mario o-- Martillo
+Mario o-- Escalera
+Mario o-- Plataforma
+Dk o-- Barril
+
+
 
 @enduml
