@@ -8,6 +8,7 @@ using namespace std;
 int main(int argc, char const *argv[])
 {
     // cout<<"Press 'd' to --> ,  Press 'a' to <-- , Press 'q' to quit "<<endl;
+    // Tamaño de pagina recomendado 33%
     Ventana v;
 
     Dibujo d1(2, 1, "dk");
