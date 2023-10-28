@@ -1,5 +1,6 @@
+bin/main : src/main.cpp include/*.hpp
+	c++ src/main.cpp -I include -o bin/main -lcurses
 
-
-bin/ejecutable :
-	c++ src/main.cpp -o bin/ejecutable -I include
+run : bin/main
+	./bin/main
 
